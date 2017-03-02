@@ -1,11 +1,11 @@
 {
-    "domain": "localhost:8000",
+    "domain": "https://demo.lizard.net:8001",
     "gauges": false,
     "locale": "nl_NL",
     "js_debug": true,
     "sso": {
-        "login": "http://localhost:8000/accounts/login/?domain=http://localhost:9000/",
-        "logout": "http://localhost:8000/accounts/logout/?domain=http://localhost:9000/"
+        "login": "",
+        "logout": ""
     },
     "user": {
         "username": "",

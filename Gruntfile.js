@@ -28,7 +28,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-autoprefixer');
 
-
   var appConfig = {
     app: require('./bower.json').appPath,
     dist: 'dist',
@@ -102,11 +101,11 @@ module.exports = function (grunt) {
             return [
               modRewrite([
                 '!\\\/api|\\\/accounts|\\\/bootstrap|\\\/about|\\\/proxy|\\\/scripts\/|\\.html|\\.js|\\.svg|\\.css|\\.woff|\\.png$ /index.html [L]',
-                '^/about/ http://localhost:8000/about/ [P]',
-                '^/api/ http://localhost:8000/api/ [P]',
-                '^/proxy/ http://localhost:8000/proxy/ [P]',
-                '^/bootstrap/ http://localhost:8000/bootstrap/ [P]',
-                '^/accounts/ http://localhost:8000/accounts/ [P]',
+                '^/about/ https://demo.lizard.net/about/ [P]',
+                '^/api/ https://demo.lizard.net/api/ [P]',
+                '^/proxy/ https://demo.lizard.net/proxy/ [P]',
+                '^/bootstrap/ https://demo.lizard.net/bootstrap/ [P]',
+                '^/accounts/ https://demo.lizard.net/accounts/ [P]',
                 ]),
               connect.static('.tmp'),
               connect().use(
