@@ -131,7 +131,7 @@ appropriate URLs in your CHANGELOG.
 
 The commits made are reflected in the Changelog. See the (changelog)[CHANGELOG.md] for an example.
 
-### Release
+## Release
 
 Doing a release for your package is easy(-ish). There is a grunt task to tag and push tags to github.
 
@@ -173,7 +173,7 @@ The fixes and the `CHANGELOG.md` would have to be merged with master, which migh
 give some merge conflicts. C'est la vie.
 
 
-### Deployment
+## Deployment
 
 For the deployment of frontend repositories we make use of the client
 deployment repository https://github.com/nens/client-deployment. It is already
