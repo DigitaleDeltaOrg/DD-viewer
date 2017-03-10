@@ -174,6 +174,7 @@ give some merge conflicts. C'est la vie.
 
 
 ### Deployment
+
 For the deployment of frontend repositories we make use of the client
 deployment repository https://github.com/nens/client-deployment. It is already
 included as a git submodule in this repo.
@@ -208,6 +209,12 @@ Deploy to staging:
 Deploy to production:
 
     ansible-playbook -i deploy/production_hosts -K deploy/deploy.yml --extra-vars="version=2.7.1"
+
+
+### Bootstrapping
+
+For bootstrapping purposes, the DD-viewer needs some initial data from
+[http://www.digitaledelta.org/bootstrap/lizard/](http://www.digitaledelta.org/bootstrap/lizard/).
 
 
 ## Source files
