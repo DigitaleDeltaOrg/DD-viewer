@@ -214,7 +214,7 @@ Deploy to production:
 ### Bootstrapping
 
 For bootstrapping purposes, the DD-viewer needs some data from
-[http://www.digitaledelta.org/bootstrap/lizard/](http://www.digitaledelta.org/bootstrap/lizard/).
+[https://digitaledelta.lizard.net/bootstrap/lizard/](https://digitaledelta.lizard.net/bootstrap/lizard/).
 This JSON determines the base layers and overlays, the spatial and temporal
 viewport, etc., and is the recommended way to initialize the client. If you are
 inclined to override any of these settings, it's possible the save the file
