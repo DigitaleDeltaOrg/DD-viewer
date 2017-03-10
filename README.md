@@ -218,7 +218,8 @@ For bootstrapping purposes, the DD-viewer needs some data from
 This JSON determines the base layers and overlays, the spatial and temporal
 viewport, etc., and is the recommended way to initialize the client. If you are
 inclined to override any these settings, it's possible the save the file
-locally as `dd-bootstrap.json`, edit it, and place it next to `index.html`.
+locally as `dd-bootstrap.json`, edit it to meet your wishes, and place it next
+to `index.html`.
 
 
 ## Source files
