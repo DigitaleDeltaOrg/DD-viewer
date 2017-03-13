@@ -274,6 +274,8 @@ angular.module('timeseries')
         }
         graphTimeseries.thresholds = [];
         ts.node = graphTimeseries.node;
+        ts.url = "<a href='" + graphTimeseries.url + "' target='_blank'>" +
+          graphTimeseries.url + "</a>";
       }
 
       if (assetOfTs) {
@@ -336,6 +338,7 @@ angular.module('timeseries')
         graphTimeseries.valueType = ts.value_type;
         graphTimeseries.measureScale = ts.observation_type.scale;
         graphTimeseries.node = ts.node.name;
+        graphTimeseries.url = ts.url;
         graphTimeseries = addTimeseriesProperties(graphTimeseries);
         result.push(graphTimeseries);
       });
