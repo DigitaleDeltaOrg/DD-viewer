@@ -365,9 +365,34 @@ angular.module('omnibox')
         valueSuffix: ""
       },
       {
+        keyName: gettext("Code"),
+        attrName: "code",
+        ngBindValue:
+          "waterchain.code",
+        valueSuffix: ""
+      },
+      {
         keyName: gettext("Category"),
         attrName: "category",
         ngBindValue: "waterchain.category",
+        valueSuffix: ""
+      },
+      {
+        keyName: gettext("Compartment"),
+        attrName: "compartment",
+        ngBindValue: "",
+        valueSuffix: ""
+      },
+      {
+        keyName: gettext("Start"),
+        attrName: "start",
+        ngBindValue: "",
+        valueSuffix: ""
+      },
+      {
+        keyName: gettext("End"),
+        attrName: "end",
+        ngBindValue: "",
         valueSuffix: ""
       },
       {
@@ -377,25 +402,22 @@ angular.module('omnibox')
         valueSuffix: ""
       },
       {
-        keyName: gettext("Code"),
-        attrName: "code",
-        ngBindValue:
-          "waterchain.code",
+        keyName: gettext("Time series"),
+        attrName: "url",
+        ngBindValue: "waterchain.timeseries[0].url",
         valueSuffix: ""
       },
       {
-          keyName: gettext("Source Node"),
-          attrName: "node",
-          ngBindValue:
-            "waterchain.timeseries[0].node",
-          valueSuffix: ""
+        keyName: gettext("Data source"),
+        attrName: "datasource",
+        ngBindValue: "",
+        valueSuffix: ""
       },
       {
-          keyName: gettext("Url"),
-          attrName: "node",
-          ngBindValue:
-            "waterchain.timeseries[0].url",
-          valueSuffix: ""
+        keyName: gettext("Node"),
+        attrName: "node",
+        ngBindValue: "waterchain.timeseries[0].node",
+        valueSuffix: ""
       }
     ]
   };
