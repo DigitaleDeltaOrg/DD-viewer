@@ -274,8 +274,8 @@ angular.module('timeseries')
         }
         graphTimeseries.thresholds = [];
         ts.node = graphTimeseries.node;
-
-        if (_.find(State.selected.timeseries, {'uuid': ts.uuid }).active) {
+        var tsActive = _.find(State.selected.timeseries, {'uuid': ts.uuid });
+        if (tsActive && tsActive.active) {
           assetOfTs.timeseries_url = "<a href='" + graphTimeseries.url +
             "' target='_blank'>" + graphTimeseries.url + "</a>";
         }
