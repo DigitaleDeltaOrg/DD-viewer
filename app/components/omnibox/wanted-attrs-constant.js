@@ -394,7 +394,7 @@ angular.module('omnibox')
           keyName: gettext("Url"),
           attrName: "node",
           ngBindValue:
-            "waterchain.timeseries[0].url",
+            "waterchain.timeseries_url",
           valueSuffix: ""
       }
     ]

@@ -274,8 +274,11 @@ angular.module('timeseries')
         }
         graphTimeseries.thresholds = [];
         ts.node = graphTimeseries.node;
-        ts.url = "<a href='" + graphTimeseries.url + "' target='_blank'>" +
-          graphTimeseries.url + "</a>";
+
+        if (_.find(State.selected.timeseries, {'uuid': ts.uuid }).active) {
+          assetOfTs.timeseries_url = "<a href='" + graphTimeseries.url +
+            "' target='_blank'>" + graphTimeseries.url + "</a>";
+        }
       }
 
       if (assetOfTs) {
